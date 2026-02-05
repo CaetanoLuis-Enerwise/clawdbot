@@ -8,7 +8,7 @@ services:
       - key: PORT
         value: "8080"
       - key: SETUP_PASSWORD
-        sync: false  # prompts during deploy
+        sync: false
       - key: CLAWDBOT_STATE_DIR
         value: /data/.clawdbot
       - key: CLAWDBOT_WORKSPACE_DIR
@@ -16,8 +16,6 @@ services:
       - key: CLAWDBOT_GATEWAY_TOKEN
         generateValue: true
       - key: GEMINI_API_KEY
-        sync: false
-      - key: ANTHROPIC_API_KEY
         sync: false
     disk:
       name: clawdbot-data
